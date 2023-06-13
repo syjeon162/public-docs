@@ -16,12 +16,12 @@ Yes, this is long; it might be useful to add aliases or paths to your bash scrip
 
 ## Bash Basics
 
-`cd` : move into/out of directories. 
-`ls` : list what's inside directory. 
-`ls -l` : list what's inside the directory, with more details. 
-`pwd` : print path to current directory. 
-`mkdir`, `rmdir` : make / remove directory. 
-`mv`, `rm`, `cp` : move, remove, copy files. you can move/remove/copy directories and everything in them by adding `-r` (recursive).
+`cd` : move into/out of directories.  
+`ls` : list what's inside directory.  
+`ls -l` : list what's inside the directory, with more details.  
+`pwd` : print path to current directory.  
+`mkdir`, `rmdir` : make / remove directory.  
+`mv`, `rm`, `cp` : move, remove, copy files. you can move/remove/copy directories and everything in them by adding `-r` (recursive).  
 
 `mv` and `cp` always takes 2 arguments; the target file and the destination file.  
 You can name your file differently as you copy/move it by simply passing it a new name, ex:
@@ -46,13 +46,13 @@ i.e., no matter what directory you are in, if you do `cd /projectnb/snoplus` it 
 
 ## Python scripts
 
-`eos_electrons.mac`. 
+`eos_electrons.mac`.  
 macro script for running a simulation where an electron starts with some momentum in a given direction. Will produce a `.root` file.
 
-`visualize.mac`. 
+`visualize.mac`.  
 macro script for creating a `.wrl` file from a `.geo` file. Then, you can view the `.wrl` file using Paraview.
 
-`visualize.py`. 
+`visualize.py`.  
 script for visualizing the number of hits per PMT in the EOS detector. Need to pass in a `.root` file, ex:
 
 	python visualize.py ROOTFILENAME.root
