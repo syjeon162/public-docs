@@ -61,37 +61,16 @@ Then, it'll save `.png` files under `./EventDisplay`.
 
 ## Interactive sessions
 
-You can view files on the SCC through SCC ondemand
-**[scc-ondemand.bu.edu](https://scc-ondemand.bu.edu/)**
+You can view files on the SCC through SCC ondemand. 
+**[scc-ondemand.bu.edu](https://scc-ondemand.bu.edu/)**. 
 This is the easiest way to view images and download them to your local computer.
 
-Of course, you can also use VNC to use the SCC like a desktop computer.
+## Geometry files
 
-### VNC
+Geometry files are, again, under
 
-on SCC,
-```
-vncstart
-```
+	/project/snoplus/EosSimulations/install/share/eos/ratdb/Eos/.
 
-Then follow the instructions to connect to the VNC server from your local computer.
-Preferably, do this on a new terminal window.
+https://ratpac-watchman.readthedocs.io/en/latest/users_guide/geometry.html
 
-Then connect to address `localhost:XXXX` on VNC program.
-
-To kill VNC server,
-```
-vncserver -kill :7
-```
-
-### Paraview
-
-Once you're on the SCC desktop through VNC, open a terminal.
-
-	module load paraview
-
-to load the paraview module. Then, you can run
-
-	paraview
-
-to open the program.
+Before viewing them on paraview, remember to create `.wrl` files using `visualize.mac`
