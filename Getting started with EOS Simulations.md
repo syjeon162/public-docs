@@ -102,6 +102,24 @@ Or just tell it to store all events, regardless of trigger:
 
 This is normally not necessary though.
 
+### Output Files
+By default, running rat will produce ntuple files with the name `output.ntuple.root`.  
+You can change this when running the simulation by doing:
+```
+eos example.mac -o newOutputName.root
+```
+Or, alternatively, specify it in the macro by adding the line:
+```
+/rat/procset file "/path/to/output.root"
+```
+This line has to go after the line
+```
+/rat/proclast eosntuple
+```
+which specifies the type of output file (`eosntuple`) we're asking ratpac to produce, and that this type of output file should have the name that we've specified.  
+There are other types of output files like `outroot` that you don't have to care too much about at the moment.  
+
+
 ## Opening ROOT files
 ```
 root ROOTFILENAME.root
@@ -134,7 +152,12 @@ output->GetEntries()
 ```
 
 These commands are nice to know so that you can do some sanity checks or quickly check what the root files contain.  
-But for most stuff it's probably more convenient to just use pyROOT (python implementation of ROOT) to read the data and plot things in matplotlib.  
+
+Of course, ROOT also lets you view its file contents through TBrowser, a GUI where you can navigate through trees and look at the histograms.  
+(If you're on VScode, the ROOT viewer extension is nice; basically helps you load the TBrowser in the VScode window.)  
+But if you're just trying to see how many events were collected, there's no need to use this which will take a bit to load.  
+
+When you're actually having to do some analysis, it's probably most convenient to just use pyROOT or uproot (both in python) to read the data, sort/do things, and plot in matplotlib.  
 
 ## Using pyROOT
 
