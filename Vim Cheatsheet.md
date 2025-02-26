@@ -1,4 +1,3 @@
-
 ## Save and Quit
 
 Save
@@ -18,9 +17,14 @@ Force Quite without saving changes
 	:q!
 
 ## Edit Modes
+
 go into insert (edit) mode
 
 	i
+
+add a new line and go into insert mode
+
+	o
 
 go into visual mode
 
@@ -32,8 +36,8 @@ go into visual block mode
 
 	ctrl + v
 
-in visual block mode, after selecting multiple lines, you can press `shift + i` to insert same text at same position in multiple lines. 
-It will appear as if you are only inserting text in one line, but after pressing `esc` twice, it will be inserted in the rest.
+in visual block mode, after selecting multiple lines, you can press `shift + i` to insert same text at same position in multiple lines.  
+It will appear as if you are only inserting text in one line, but after pressing `esc` twice, it will be inserted in the rest.  
 This is useful for commenting out multiple lines at once.
 
 to get out of any mode
@@ -94,7 +98,13 @@ find and replace words in entire document
 
 	:%s/ORIGINAL/REPLACEMENT/g
 
+
+count number of search results
+
+	:%s/QUERY//gn
+
 ## Copy and Paste
+
 yank (copy) a line
 
 	yy
