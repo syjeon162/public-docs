@@ -1,5 +1,4 @@
-
-## Bash Basics
+# Bash Basics
 
 `cd` : move into/out of directories.  
 `ls` : list what's inside directory.  
@@ -30,8 +29,7 @@ i.e., no matter what directory you are in, if you do `cd /projectnb/snoplus` it 
 
 `cd ./test_folder` or `cd ../test_folder` or `cd ~/test_folder` or `cd /test_folder` will all yield different results.
 
-
-### bashrc
+## bashrc
 
 `~/.bashrc` is a shell script that will always run when you open a terminal window or login to a cluster.  
 You can set up aliases here for commands you use often. For instance:
@@ -44,7 +42,7 @@ will let you just type `myfolder` into the command line to execute the full comm
 If you make a change to the `~/.bashrc` file, you need to `source ~/.bashrc` again for that change to be reflected.  
 (or reopen the terminal window, which then will basically just do that for you)
 
-### symbolic links
+## symbolic links
 
 You can set up symbolic links to set up a "path" to a folder located in a different place.  
 For instance, assume your file structure looks like this:  
